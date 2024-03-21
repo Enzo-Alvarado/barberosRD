@@ -1,0 +1,324 @@
+/* FUENTES */
+@import url(https://db.onlinewebfonts.com/c/240c3453c17973710888381a14eb2bdb?family=PAG+Revolucion+W00+Regular);
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/bronzier");
+
+@import url("https://fonts.cdnfonts.com/css/myriad-pro");
+
+@import url(https://db.onlinewebfonts.com/c/b114b008a1b67c0cc05145e445d1d19c?family=Core+Sans+N+SC+W01+75+ExtraBold);
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+:root {
+  --fuenteprincipal: "PAG Revolucion W00 Regular";
+  --colornaranja: #af8447;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: "Abril Fatface", serif;
+}
+
+body {
+  background-color: #323232;
+}
+
+img {
+  width: 10rem;
+  height: 10rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* HEADER */
+
+header {
+  background-color: black;
+  padding-bottom: 2rem;
+}
+
+header h1 {
+  display: none;
+}
+
+.linksHeader-carrito {
+  display: none;
+}
+
+.carrito {
+  display: none;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--fuenteprincipal);
+  font-size: 1.2rem;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+/* SECCION PRODUCTOS */
+
+.card {
+  width: 230px;
+  height: 90%;
+
+  color: var(--colornaranja);
+
+  border: 2px solid black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--colornaranja);
+  font-family: "Abril Fatface", serif;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--font-color-sub);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.card-divider {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--font-color);
+  font-family: "Abril Fatface", serif;
+}
+
+.card-btn {
+  height: 35px;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  padding: 0 15px;
+  transition: all 0.3s;
+}
+
+.card-btn svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--main-color);
+  transition: all 0.3s;
+}
+
+.card-img {
+  text-align: center;
+
+  background-color: var(--colornaranja);
+  border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+}
+
+.productosNewGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  row-gap: 2rem;
+  margin-left: 12rem;
+  margin-right: 8rem;
+}
+
+/*           FOOTER          */
+
+.contenedorFooter {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  width: 100%;
+  padding-bottom: 100px;
+  margin-top: 10rem;
+  font-family: "Oswald", sans-serif;
+  border-top: 2px solid black;
+  padding-top: 2rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1440px) {
+  .productosNewGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .productosNewGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 390px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    height: 3rem;
+  }
+
+  header h1 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Bronzier", sans-serif;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+    padding-top: 1.5rem;
+  }
+
+  .linksHeader {
+    display: none;
+  }
+
+  .carrito {
+    display: block;
+    color: white;
+    padding-top: 1.5rem;
+  }
+
+  .menu {
+    padding-top: 1.5rem;
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: white;
+    width: 1rem;
+    margin-left: 1rem;
+  }
+
+  .cerrar-menu {
+    color: white;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    display: block;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+    text-align: start;
+  }
+
+  .nav-list a {
+    display: block;
+    color: white;
+  }
+
+  .linksHeader-carrito {
+    border: none;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    width: 1rem;
+    margin-right: 1rem;
+  }
+
+  .linksHeader-carrito2 {
+    border: none;
+    display: none;
+  }
+
+  .productosNewGrid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    margin-left: 3.1rem;
+  }
+
+  /* SECCION FOOTER  */
+
+  .contenedorFooter {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

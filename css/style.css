@@ -1,0 +1,872 @@
+/* FUENTES */
+@import url(https://db.onlinewebfonts.com/c/240c3453c17973710888381a14eb2bdb?family=PAG+Revolucion+W00+Regular);
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/bronzier");
+
+@import url("https://fonts.cdnfonts.com/css/myriad-pro");
+
+@import url(https://db.onlinewebfonts.com/c/b114b008a1b67c0cc05145e445d1d19c?family=Core+Sans+N+SC+W01+75+ExtraBold);
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+:root {
+  --fuenteprincipal: "PAG Revolucion W00 Regular";
+  --colornaranja: #af8447;
+}
+
+main {
+  background-image: url("../images/fondoInicio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* CLASES GENERALES */
+
+button {
+  border: none;
+  color: white;
+  background-color: #af8447;
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.centrar {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER */
+
+header h1 {
+  display: none;
+}
+
+.linksHeader-carrito {
+  display: none;
+}
+
+.carrito {
+  color: white;
+  cursor: pointer;
+}
+
+.carrito1 {
+  display: block;
+}
+
+.btn-cerrar {
+  display: block;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--fuenteprincipal);
+  font-size: 1.2rem;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+/* SECCION INICIO */
+
+.contenedorInicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 10rem;
+}
+
+.contenedorInicio__fondo--img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.contenedorInicio__fondo--h1 {
+  font-family: "Bronzier", sans-serif;
+  font-size: 8rem;
+  margin-top: -4rem;
+  color: white;
+}
+
+.contenedorInicio__fondo--h2 {
+  margin-top: 1rem;
+  font-family: "Core Sans N SC W01 75 ExtraBold";
+
+  color: grey;
+  font-size: 2rem;
+}
+
+.contenedorInicio__fondo--btn {
+  margin-top: 2rem;
+}
+
+/* SECCION NOSOTROS  */
+
+.contendorNosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: bisque;
+  color: white;
+  z-index: 1000;
+
+  background-image: url("../images/texturaNosotros.png");
+}
+
+.contendorNosotros__descripcion--img {
+  width: 20rem;
+  margin-top: 10rem;
+  margin-right: 10rem;
+  position: relative;
+  left: -150px;
+}
+
+.contendorNosotros__descripcion {
+  text-align: center;
+  margin-right: 10rem;
+  height: 50rem;
+  position: relative;
+  right: 200px;
+}
+
+.contendorNosotros__descripcion--h2 {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  text-align: left;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+.contendorNosotros__descripcion--h3 {
+  text-align: left;
+  margin-top: 9rem;
+  color: var(--colornaranja);
+  line-height: 4rem;
+  border-bottom: solid 1px var(--colornaranja);
+  font-family: "Oswald", sans-serif;
+}
+
+.contendorNosotros__descripcion--p {
+  text-align: left;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  color: gray;
+  width: 30rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.contendorNosotros__descripcion--boton {
+  margin-bottom: 18rem;
+  margin-right: 15rem;
+}
+
+.contendorNosotros__card--horarios {
+  text-align: center;
+  margin-right: 20rem;
+  background-color: var(--colornaranja);
+  width: 466px;
+  height: 580px;
+  -webkit-box-shadow: 30px 30px 0px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 30px 30px 0px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 30px 30px 0px 0px rgba(0, 0, 0, 0.18);
+
+  position: relative;
+  top: -100px;
+  z-index: 1000;
+  font-family: "Oswald", sans-serif;
+}
+
+.contendorNosotros__card--h2 {
+  margin-top: 3rem;
+  line-height: 4rem;
+}
+
+.contenedorNosotros__card--p {
+  line-height: 3rem;
+}
+
+.contenedorNosotros__card--icono {
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+/* SECCION SERVICIOS */
+
+.contenedorServicios {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorServicios__titulos {
+  padding-top: 4rem;
+  margin-bottom: 5rem;
+  margin-top: 6rem;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  color: #000;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  padding: 20px;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.item h2 {
+  margin: 0;
+}
+
+.item p {
+  margin: 10px 0;
+}
+
+/* SECCION PRODUCTOS */
+
+.productos {
+  background-image: url(../images/fondoProductos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedorProductos__titulos {
+  padding-top: 4rem;
+  margin-bottom: 5rem;
+  margin-top: 12rem;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+}
+
+.contendorProductos__titulos--h4 {
+  margin-bottom: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--colornaranja);
+}
+
+.contendorProductos__titulos--h2 {
+  font-size: 4rem;
+}
+
+.contenedorProdcutos__icono {
+  font-size: 6rem;
+}
+
+.productosGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-template-rows: repeat(1, 3fr);
+}
+
+.card {
+  width: 290px;
+  height: 254px;
+  padding: 0.8em;
+  padding-bottom: 2rem;
+  background: transparent;
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.card-img {
+  height: 40%;
+  width: 10rem;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+  margin: auto;
+}
+
+.card-img img {
+  width: 15rem;
+  height: 15rem;
+}
+
+.text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: var(--colornaranja);
+  margin-top: 10rem;
+  margin-left: 5rem;
+  font-family: "Abril Fatface", serif;
+}
+
+.text-titlePrecio {
+  margin-left: 5rem;
+  font-size: 1rem;
+  color: var(--colornaranja);
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+}
+
+.containerBoton {
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.botonProductos {
+  color: #000;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  border: 1px solid #af8447;
+  background-color: transparent;
+  color: var(--colornaranja);
+  width: 15rem;
+}
+
+/* SECCION RESERVAS */
+
+.contendorReservas__grid {
+  background-image: url("../images/texturaReservas.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
+  font-family: "Oswald", sans-serif;
+}
+
+.contendorReservas__grid--img1 {
+  grid-row: 1 / 3;
+}
+
+.contendorReservas__grid--texto {
+  margin-top: 10rem;
+  grid-row: 1 / 4;
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.contendorReservas__grid--icono {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.contendorReservas__grid--h2 {
+  margin-bottom: 1rem;
+}
+
+.contendorReservas__grid--btn {
+  margin-top: 2rem;
+  width: 15rem;
+}
+
+.contendorReservas__grid img {
+  height: 100%;
+  width: 100%;
+}
+
+.input-btn {
+  border: none;
+  color: white;
+  background-color: #af8447;
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+/* SECCION FONDO IMAGEN */
+
+.contenedorFondoImg__img {
+  margin-top: 10rem;
+  width: 100%;
+  height: 30rem;
+}
+
+/* SECCION CONTACTO */
+
+.contactoTexto {
+  margin-top: 5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.contact__h3 {
+  color: var(--colornaranja);
+}
+
+.contact__h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 60rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin: 0.7rem 0;
+}
+
+.input-box select {
+  width: 29.4rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.contact__icono {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact__h3 {
+  margin-bottom: 2rem;
+}
+
+.contactoTexto button {
+  margin-left: 2rem;
+}
+
+.btn {
+  margin-left: 40rem;
+  width: 20rem;
+}
+
+/*           FOOTER          */
+
+.contenedorFooter {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  width: 100%;
+  padding-bottom: 100px;
+  margin-top: 10rem;
+  font-family: "Oswald", sans-serif;
+}
+
+/* SECCION FONDO FINAL */
+
+.fondoFinal {
+  background-color: black;
+  width: 100%;
+  height: 3rem;
+}
+
+/* SECCION RESPONSIVE */
+
+@media (max-width: 1440px) {
+  /* SECCION NOSOTROS */
+
+  .contendorNosotros {
+    height: 10%;
+  }
+
+  .contendorNosotros__card--horarios {
+    right: 15rem;
+  }
+
+  /* SECCION FONDO IMAGEN  */
+
+  .contenedorFondoImg img {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    background-position: center;
+  }
+
+  /* SECCION NOSOTROS */
+
+  .contendorNosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .contendorNosotros__descripcion {
+    left: -34rem;
+  }
+
+  .contendorNosotros__card--horarios {
+    margin-top: 10rem;
+    right: -10rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  /* SECCION PRODUCTOS */
+
+  .productosGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* SECCION RESERVAS */
+
+  .contendorReservas__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .eliminar768 {
+    display: none;
+  }
+
+  /* SECCION FONDO IMAGEN */
+
+  .contenedorFondoImg img {
+    height: 14rem;
+  }
+
+  /* SECCION CONTACTO */
+
+  .contact {
+    width: 40rem;
+    margin: auto;
+  }
+
+  .btn {
+    margin-left: 20rem;
+  }
+
+  /* SECCION FOOTER*/
+
+  .contenedorFooter {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 390px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+  }
+
+  header h1 {
+    display: block;
+    font-size: 1rem;
+    font-family: "Bronzier", sans-serif;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+  }
+
+  .linksHeader {
+    display: none;
+  }
+
+  .carrito {
+    display: block;
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: white;
+    width: 1rem;
+    margin-left: 1rem;
+  }
+
+  .cerrar-menu {
+    color: white;
+  }
+
+  .bxl-whatsapp {
+    margin-left: -10rem;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    display: block;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+    text-align: start;
+  }
+
+  .nav-list a {
+    display: block;
+    color: white;
+  }
+
+  .linksHeader-carrito {
+    border: none;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    width: 1rem;
+    margin-right: 1rem;
+  }
+
+  .linksHeader-carrito2 {
+    border: none;
+    display: none;
+  }
+
+  /* SECCION INICIO */
+
+  main {
+    background-image: url(../images/fondoInicio390.png);
+  }
+
+  .contenedorInicio__fondo--h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin: auto;
+  }
+
+  .contenedorInicio__fondo--h2 {
+    font-size: 1.2rem;
+  }
+
+  /* SECCION NOSOTROS */
+
+  .contendorNosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .contendorNosotros__descripcion--img {
+    display: none;
+  }
+
+  .contendorNosotros__descripcion {
+    width: 50%;
+    font-size: 0.4;
+    margin-left: 30rem;
+    text-align: center;
+  }
+  .contendorNosotros__descripcion--h3 {
+    margin-top: -40rem;
+    margin-left: 6rem;
+  }
+
+  .contendorNosotros__descripcion--h2 {
+    margin-left: 6rem;
+  }
+
+  .contendorNosotros__descripcion--p {
+    width: 20rem;
+    margin-left: 6rem;
+  }
+
+  .contendorNosotros__descripcion--boton {
+    margin: auto;
+  }
+
+  .contendorNosotros__card--horarios {
+    font-size: 0.9rem;
+    width: 30%;
+    right: -2.2rem;
+    margin-top: -35rem;
+  }
+
+  /* SECCION PRODUCTOS */
+
+  .productosGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* SECCION RESERVAS */
+
+  .contendorReservas__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .contendorReservas__grid--h2 {
+    font-size: 1rem;
+  }
+
+  .contendorReservas__grid--texto p {
+    font-size: 0.8rem;
+  }
+
+  .contendorReservas__grid--btn {
+    width: 6rem;
+  }
+
+  .eliminar390 {
+    display: none;
+  }
+
+  .eliminar768 {
+    display: none;
+  }
+
+  /* SECCION FONDO IMAGEN */
+
+  .contenedorFondoImg img {
+    height: 10rem;
+  }
+
+  /* SECCION CONTACTO */
+
+  .contact {
+    width: 23.2rem;
+    margin: auto;
+  }
+
+  .contactoTexto button {
+    width: 8rem;
+    margin: 0 auto;
+  }
+
+  .btn {
+    margin-left: 0rem;
+  }
+
+  /* SECCION FOOTER  */
+
+  .contenedorFooter {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+Animación .contenedorInicio__fondo--img,
+.contenedorInicio__fondo--h1,
+.contenedorInicio__fondo--h2,
+.contenedorInicio__fondo--btn {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.contenedorInicio__fondo--img,
+.contenedorInicio__fondo--h1.animate,
+.contenedorInicio__fondo--h2.animate,
+.contenedorInicio__fondo--btn.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación personalizada */
+@keyframes slideIn {
+  0% {
+    transform: translateY(90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.contenedorInicio__fondo--img,
+.contenedorInicio__fondo--h1,
+.contenedorInicio__fondo--h2,
+.contenedorInicio__fondo--btn {
+  animation: slideIn 1s forwards;
+}

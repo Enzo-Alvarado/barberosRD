@@ -1,0 +1,85 @@
+@import url(https://db.onlinewebfonts.com/c/240c3453c17973710888381a14eb2bdb?family=PAG+Revolucion+W00+Regular);
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/bronzier");
+
+@import url("https://fonts.cdnfonts.com/css/myriad-pro");
+
+@import url(https://db.onlinewebfonts.com/c/b114b008a1b67c0cc05145e445d1d19c?family=Core+Sans+N+SC+W01+75+ExtraBold);
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+:root {
+  --fuenteprincipal: "PAG Revolucion W00 Regular";
+  --colornaranja: #af8447;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--colornaranja);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+
+.product-container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container img {
+  width: 40rem;
+}
+
+.product-info {
+  background-color: #000;
+  color: white;
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
+.product-title {
+  font-size: 2rem;
+}
+
+.product-price {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.input-cantidad {
+  height: 1.2rem;
+}
+
+.card-btn {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-btn svg {
+  height: 3.5rem;
+  width: 4rem;
+}
